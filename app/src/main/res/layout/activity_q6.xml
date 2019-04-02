@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Q6">
+
+
+        <LinearLayout
+            android:id="@+id/activity_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            tools:context=".activity_main">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginBottom="40dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="$ 2000"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:layout_marginBottom="40dp"
+                android:padding="8dp"
+                android:text="What color is cobalt?"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/choice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@color/colorAccent"
+                    android:padding="8dp"
+                    android:text="Yellow"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+
+                <RadioButton
+                    android:id="@+id/choice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@color/colorAccent"
+                    android:padding="8dp"
+                    android:text="Blue"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+
+                <RadioButton
+                    android:id="@+id/choice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@color/colorAccent"
+                    android:padding="8dp"
+                    android:text="Black"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+
+                <RadioButton
+                    android:id="@+id/choice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@color/colorAccent"
+                    android:padding="8dp"
+                    android:text="Pink"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/confirmAnswer"
+                android:layout_width="378dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Next question"
+                android:textColor="@android:color/background_light" />
+
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
